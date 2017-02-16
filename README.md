@@ -6,7 +6,16 @@ developers.
 In principle each operation takes the form b([oO0]+)*([oO0]+)b, spelling
 out 'Boob' in various lengths.
 
+## Bewb Is Ternary
 
+All data in Bewb is ternary, so 3 mini-bewbs per bewb bit.
+
+These are:
+
+| 0 | => | o |
+|---|----|---|
+| 1 | => | O |
+| 2 | => | 0 |
 
 ## Operation Format
 
