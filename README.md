@@ -22,15 +22,15 @@ will only consider some of the length.
 
 | Name | Code | Variables | Description |
 |------|------|-----------|-------------|
-| Store Char| oooo | char:8 ref:42 | Not Implemented |
-| Store Short| oooO | char:16 ref:42 | Not Implemented |
-| Store Int| ooo0 | int:32 ref:42 | Stores int at ref |
-| Store Float| ooOo | float:64 ref:42 | Not Implemented |
-| Store Str| ooOO | str: ref:42 | Stores string at ref |
-| Write Alpha| ooO0 | alpha:4N | Print alpha to screen |
-| Write Whitespace| oo0o | code:4 | Print whitepace to screen |
-| Write Reference| oo0O | ref:42 | Print reference to screen |
-| Integer Addition | oOoO | ref:42 ref:42 ref:42 | Adds two integers and stores result at ref |
+| Store Char| o | char:8 ref:42 | Not Implemented |
+| Store Short| O | char:16 ref:42 | Not Implemented |
+| Store Int| 0 | int:32 ref:42 | Stores int at ref |
+| Store Float| Oo | float:64 ref:42 | Not Implemented |
+| Store Str| OO | str: ref:42 | Stores string at ref |
+| Write Alpha| O0 | alpha:4N | Print alpha to screen |
+| Write Whitespace| 0o | code:4 | Print whitepace to screen |
+| Write Reference| 0O | ref:42 | Print reference to screen |
+| Integer Addition | OoO | ref:42 ref:42 ref:42 | Adds two integers and stores result at ref |
 | Define Label | 0o0 | ref:42 | Defines a label with ref |
 | Go To Label | 0Oo | ref:42 | Move to execution after label at ref |
 | Logical If | OoOo | left:42 right:42 operator:3 success:42 fail:42 | |
