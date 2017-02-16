@@ -1,0 +1,7 @@
+.idea
+build*
+default_db
+dist
+.DS_Store
+*.pyc
+*egg-info*
