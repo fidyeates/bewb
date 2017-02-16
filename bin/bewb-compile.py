@@ -4,6 +4,8 @@ import sys
 import string
 import operator
 
+from bewb.op_codes import OPCodes
+
 BYTE_OFFSETS = {
     'o': 0,
     'O': 1,
@@ -36,36 +38,6 @@ FUNCTION_RETURN_REF = None
 
 def get_next_scope():
     return max(SCOPES.keys() or [0]) + 1
-
-
-class OPCodes:
-    store_char = NotImplemented
-    store_short = NotImplemented
-    store_int = 2
-    store_float = NotImplemented
-    store_string = 4
-    store_alpha = NotImplemented
-
-    write_alpha = 5
-    write_whitespace = 6
-    write_reference = 7
-
-    int_add = 10
-
-    label = 20
-    go_to_label = 21
-
-    logical_if = 30
-
-    stdin_read = 40  # ref:
-    raw_input = 41  # ref:
-
-    cast_to = 51  # type: ref: ?dst:
-
-    f_define = 60
-    f_arg_init = 61
-    f_return = 62
-    f_call = 63
 
 
 def write_alpha(encoded_words):
